@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Favorite Book Survey</h1>
+      <p id="description">Describe your favorite book</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required />
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required />
+        <label id="number-label">Age</label>
+        <input id="number" type="number" placeholder="Enter your age" min="12" max="120"/>
+      </fieldset>
+      <fieldset>
+        <label>Pick your favorite book genre</label>
+        <select id="dropdown">
+          <option value="">Pick one</option>
+          <option value="1">Mystery</option>
+          <option value="2">Thriller</option>
+          <option value="3">Horror</option>
+          <option value="4">Historical</option>
+          <option value="5">Romance</option>
+          <option value="6">Science Fiction</option>
+          <option value="7">Fantasy</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite way of reading</label>
+        <input class="inline" type="radio" name="medium" /> Paperback <br>
+        <input class="inline" type="radio" name="medium" /> Books Play(Android and Iphone) <br>
+        <input class="inline" type="radio" name="medium" /> Kindle
+      </fieldset>
+      <fieldset class="check">
+        <label>What do you like best in a book? (Check all that apply)</label>
+        <input class="inline" type="checkbox" value="characters" />Characters <br>
+        <input class="inline" type="checkbox" value="plot" />Plot <br>
+        <input class="inline" type="checkbox" value="conflict" />Conflict <br>
+        <input class="inline" type="checkbox" value="resolution" />Resolution <br>
+        <input class="inline" type="checkbox" value="morals" />Morals <br>
+        <input class="inline" type="checkbox" value="theme" />Theme (Coming of Age, Forgiveness, Love, Empowerment, Death, Good vs. Bad)
+      </fieldset>
+      <fieldset>
+        <label>Describe your favorite book</label>
+        <textarea rows="3" cols="30" placeholder="I like the Harry Potter books because..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
